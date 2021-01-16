@@ -9727,8 +9727,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965578491}
-  m_LocalRotation: {x: -0, y: -0.98566073, z: 0, w: 0.16873936}
-  m_LocalPosition: {x: 0.0065910965, y: -0.04709786, z: 0.32630277}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 543450652178417370}
@@ -16823,6 +16823,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6366259593452205425, guid: 24c12a09beffa604f8b7fe6fed477fe2, type: 3}
+--- !u!1 &1789585750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1789585751}
+  m_Layer: 0
+  m_Name: "\u653B\u64CA\u4E2D\u5FC3"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1789585751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789585750}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.708, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1994486217}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1791154131
 GameObject:
   m_ObjectHideFlags: 0
@@ -18216,6 +18246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\u751F\u6C23"
       objectReference: {fileID: 0}
+    - target: {fileID: 100098, guid: 14917865b992440a388fc2d996e8bd5e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400098, guid: 14917865b992440a388fc2d996e8bd5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50.793034
@@ -18290,10 +18324,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.17141151
+  m_Radius: 0.13724232
   m_Height: 1.1485794
   m_Direction: 1
-  m_Center: {x: 0.0035266876, y: 0.59536684, z: 0}
+  m_Center: {x: 0.0035266876, y: 0.59536684, z: -0.034169197}
 --- !u!54 &1994486215
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18310,6 +18344,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!4 &1994486217 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400098, guid: 14917865b992440a388fc2d996e8bd5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989009334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1994486218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18381,6 +18421,22 @@ MonoBehaviour:
   groundMinDistance: 0.25
   groundMaxDistance: 0.5
   slopeLimit: 75
+--- !u!114 &1994486220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994486213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df40f27ade3f6245bbb82c776aaf3f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interval: 1
+  atkpoint: {fileID: 1789585751}
+  atklength: 0.73
+  atk: 30
 --- !u!1001 &1994643791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28774,7 +28830,8 @@ GameObject:
   - component: {fileID: 5866666020394065056}
   - component: {fileID: 919132148529421409}
   - component: {fileID: 919132148529421410}
-  m_Layer: 0
+  - component: {fileID: 919132148529421411}
+  m_Layer: 9
   m_Name: "\u82B1\u5E3D"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28819,7 +28876,23 @@ MonoBehaviour:
   stopDistance: 2.5
   cd: 2
   atkpoint: {fileID: 965578492}
-  atklength: 0.35
+  atklength: 2.21
+  atk: 30
+  hp: 100
+--- !u!136 &919132148529421411
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148529421408}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2.16
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.09, z: 0.33}
 --- !u!4 &920025180658730739
 Transform:
   m_ObjectHideFlags: 0
