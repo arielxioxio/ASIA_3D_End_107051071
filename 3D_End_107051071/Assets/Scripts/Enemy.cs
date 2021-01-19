@@ -98,5 +98,5 @@ public class Enemy : MonoBehaviour
         nav.SetDestination(player.position);
 
         ani.SetBool("跑步", nav.remainingDistance > stopDistance);
-        }
+    }
 }

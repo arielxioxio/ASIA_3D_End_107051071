@@ -74,33 +74,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 11172}
     - Class: 114
-      Script: {instanceID: 11340}
+      Script: {instanceID: 11342}
     - Class: 114
-      Script: {instanceID: 11380}
+      Script: {instanceID: 11382}
     - Class: 114
-      Script: {instanceID: 11458}
+      Script: {instanceID: 11460}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 11772}
+      Script: {instanceID: 11774}
     - Class: 114
-      Script: {instanceID: 11898}
+      Script: {instanceID: 11900}
     - Class: 114
-      Script: {instanceID: 11938}
+      Script: {instanceID: 11940}
     - Class: 114
-      Script: {instanceID: 12008}
+      Script: {instanceID: 12010}
     - Class: 114
-      Script: {instanceID: 12034}
+      Script: {instanceID: 12036}
     - Class: 114
-      Script: {instanceID: 12460}
+      Script: {instanceID: 12462}
     - Class: 114
-      Script: {instanceID: 12514}
+      Script: {instanceID: 12516}
     - Class: 114
-      Script: {instanceID: 12670}
+      Script: {instanceID: 12672}
     - Class: 114
-      Script: {instanceID: 13026}
+      Script: {instanceID: 13028}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -668,7 +668,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bigin
   platform: 5
   scenePathNames:
   - "Assets/3D\u5834\u666F.unity"
-  playerPath: C:/Users/user/Desktop/ASIA_3D_End_107051071/test/3D_End.exe
+  playerPath: C:/Users/user/Documents/GitHub/ASIA_3D_End_107051071/3D_107051071 
+    NEW/3D_End.exe
